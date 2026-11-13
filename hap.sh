@@ -310,6 +310,10 @@ gcloud run deploy "$SERVICE_NAME" \
   --platform=managed \
   --port=8080 \
   --allow-unauthenticated \
+  --session-affinity \
+  --no-use-http2 \
+  --no-cpu-throttling \
+  --ingress=all \
   --cpu=2 \
   --memory=4Gi \
   --min-instances=1 \
